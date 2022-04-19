@@ -1,0 +1,24 @@
+{
+  "contacts": [
+    {
+      "phone": "934000045",
+      "name": "Shams Mamadjonov",
+      "address": "Н.Карабаева 32/1 кв.42"
+    },
+    {
+      "phone": "934000000",
+      "name": "Shams",
+      "address": "Н.Карабаева 32/1"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -14,6 +14,8 @@ import {AddComponent} from './components/contacts/add/add.component';
 import {SearchComponent} from './components/contacts/search/search.component';
 import {MatCardModule} from "@angular/material/card";
 import {HttpClientModule} from "@angular/common/http";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatInputModule} from "@angular/material/input";
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import {HttpClientModule} from "@angular/common/http";
     MatButtonModule,
     MatCardModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
