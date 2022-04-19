@@ -1,1 +1,28 @@
-<p>edit works!</p>
+<mat-form-field class="example-full-width" appearance="fill">
+  <mat-label>Name</mat-label>
+  <input matInput [(ngModel)]="name">
+</mat-form-field>
+
+<mat-form-field class="example-full-width" appearance="fill">
+  <mat-label>Phone</mat-label>
+  <input matInput [(ngModel)]="phones">
+</mat-form-field>
+
+<mat-form-field class="example-full-width" appearance="fill">
+  <mat-label>Address</mat-label>
+  <input matInput [(ngModel)]="addresses">
+</mat-form-field>
+
+<mat-form-field class="example-full-width" appearance="fill">
+  <mat-label>Email</mat-label>
+  <input matInput [(ngModel)]="emails">
+</mat-form-field>
+
+
+<button mat-raised-button color="primary" (click)="editById()">Save</button>
+
+
+
+
+
+

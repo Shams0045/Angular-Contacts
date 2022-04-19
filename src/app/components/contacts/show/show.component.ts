@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Contacts} from "../../../_models";
 import {ContactService} from "../../../_services";
+import {ASharedService} from "../../../_services/a-shared.service";
 
 @Component({
   selector: 'app-show',
@@ -11,29 +12,49 @@ export class ShowComponent implements OnInit {
 
   contacts: Contacts[] = [];
 
-  constructor(private contactService: ContactService) {
+  constructor(private contactService: ContactService,
+              private sharedService: ASharedService) {
   }
 
   ngOnInit(): void {
+    this.callServices();
     this.showContacts();
   }
 
+  callServices(): void {
+    this.sharedService.getList.subscribe(()=> {
+      this.showContacts();
+    });
+  }
+
   showContacts(): void{
-    this.contactService.getContacts()
+    this.contactService.getContactList()
       .subscribe(data => {
         this.contacts = data;
-        console.log(this.contacts);
       });
   }
 
-  addContact(): void {
-    let user = {
-     id: 3,
-      phone: 93500000,
-      name: 'nameTest',
-      address: 'address test'
-    }
-    this.contacts.push(user);
+  edit(id: number): void {
+     this.sharedService.editContact(id);
+  }
+
+  delete(id: number): void {
+    this.contactService.deleteById(id)
+      .subscribe(() => {
+        this.showContacts();
+      });
+
   }
 
 }
+
+
+
+
+
+
+
+
+
+
+

@@ -1,8 +1,9 @@
 export interface Contacts {
   id: number;
-  phone: number;
+  addresses: string;
+  phones: number;
   name: string;
-  address: string;
+  emails: string;
 }
 
 export interface User {

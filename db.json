@@ -1,24 +1,27 @@
 {
   "contacts": [
     {
-      "phone": "934000045",
-      "name": "Shams Mamadjonov",
-      "address": "Н.Карабаева 32/1 кв.42"
+      "name": "Shams Mamadjonov 4",
+      "phones": [
+        "934000045",
+        "004040045"
+      ],
+      "addresses": [
+        "address 1",
+        "address 2"
+      ],
+      "emails": [
+        "email 1",
+        "email 2"
+      ],
+      "id": 1
     },
     {
-      "phone": "934000000",
-      "name": "Shams",
-      "address": "Н.Карабаева 32/1"
+      "name": "adassd 333",
+      "phones": "3543454, 234234234",
+      "addresses": "fdfgdfg",
+      "emails": "345dfg ",
+      "id": 2
     }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
