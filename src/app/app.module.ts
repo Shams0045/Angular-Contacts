@@ -11,11 +11,11 @@ import {HomeComponent} from './components/home/home.component';
 import {ShowComponent} from './components/contacts/show/show.component';
 import {EditComponent} from './components/contacts/edit/edit.component';
 import {AddComponent} from './components/contacts/add/add.component';
-import {SearchComponent} from './components/contacts/search/search.component';
 import {MatCardModule} from "@angular/material/card";
 import {HttpClientModule} from "@angular/common/http";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
+import {Ng2SearchPipeModule} from "ng2-search-filter";
 
 @NgModule({
   declarations: [
@@ -23,8 +23,7 @@ import {MatInputModule} from "@angular/material/input";
     HomeComponent,
     ShowComponent,
     EditComponent,
-    AddComponent,
-    SearchComponent
+    AddComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +36,8 @@ import {MatInputModule} from "@angular/material/input";
     HttpClientModule,
     ReactiveFormsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    Ng2SearchPipeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

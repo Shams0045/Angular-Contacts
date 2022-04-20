@@ -1,4 +1,11 @@
-<div *ngFor="let contact of contacts">
+<div class="search-hero">
+  <input class="form-control" type="text" name="search"
+         [(ngModel)]="searchText" autocomplete="off"
+         placeholder="Search by name, phone, address and email">
+</div>
+
+
+<div *ngFor="let contact of contacts | filter:searchText">
   <mat-card class="mt-3">
     <mat-card-title>{{contact.name}}</mat-card-title>
     <mat-card-subtitle class="mt-3">{{contact.phones }}</mat-card-subtitle>

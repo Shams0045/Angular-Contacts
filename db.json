@@ -17,11 +17,15 @@
       "id": 1
     },
     {
-      "name": "adassd 333",
-      "phones": "3543454, 234234234",
-      "addresses": "fdfgdfg",
-      "emails": "345dfg ",
-      "id": 2
+      "name": "test ",
+      "phones": [
+        "23223"
+      ],
+      "addresses": "the addres sss",
+      "emails": [
+        "email@gmail.com"
+      ],
+      "id": 3
     }
   ]
 }

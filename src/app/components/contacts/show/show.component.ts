@@ -11,6 +11,7 @@ import {ASharedService} from "../../../_services/a-shared.service";
 export class ShowComponent implements OnInit {
 
   contacts: Contacts[] = [];
+  searchText: any;
 
   constructor(private contactService: ContactService,
               private sharedService: ASharedService) {
