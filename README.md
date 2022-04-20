@@ -2,7 +2,7 @@
 
 Before running application please install and run JSON Server locally:
 
-  npm install -g json-server
+  npm install -g json-server <br/>
   json-server --watch db.json
 
 
